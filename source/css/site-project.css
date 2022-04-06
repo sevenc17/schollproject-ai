@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   background-color: #fff;
-  height: 3000px;
+  height: 3500px;
 }
 
 header {
@@ -188,23 +188,22 @@ header .header__wrapper img {
 
 .footer {
   width: 100%;
-  height: 20%;
+  height: 10%;
   background-color: #222;
   position: fixed;
-  top: 85%;
+  top: 90%;
 }
 .footer .footer__wrapper {
   padding: 0 12.5%;
 }
 .footer .footer__wrapper .info__list {
+  padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translate(0, 200%);
-          transform: translate(0, 200%);
   font-family: "Raleway", sans-serif;
   color: #ccc;
 }
@@ -265,5 +264,15 @@ header .header__wrapper img {
 
   .II, .deepblue {
     max-width: 120%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    line-height: 150%;
+  }
+
+  .info__list {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
